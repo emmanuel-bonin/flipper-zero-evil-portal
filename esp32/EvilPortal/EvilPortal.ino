@@ -197,8 +197,7 @@ void loop() {
   if (name_received && password_received) {
     name_received = false;
     password_received = false;
-    String logValue1 =
-        "u: " + user_name;
+    String logValue1 = "u: " + user_name;
     String logValue2 = "p: " + password;
     Serial.println(logValue1);
     Serial.println(logValue2);
